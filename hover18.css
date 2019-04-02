@@ -1,0 +1,110 @@
+body
+{
+    /* background: red */
+}
+.picture
+{
+    top:100px;
+    left:100px;
+    width: 360px;
+    height: 240px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+.picture img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.leftlay
+{
+    top: 0%;
+    right: 50%;
+    height:100%;
+    width: 0%;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    transition: 0.8s ease;
+    transition-delay: 0.8s;
+    overflow: hidden;
+}
+.picture:hover .leftlay
+{
+    width: 50%;
+}
+.middlelay
+{
+    top:0;
+    margin-left:50%;
+    width:1%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    transform: scaleY(0);
+    transition: 0.8s ease;
+    
+}
+.picture:hover .middlelay
+{
+    transform: scaleY(1)
+}
+
+
+/* ******************************** */
+.rightunderlay
+{
+top:0;
+left: 51%;
+height: 100%;
+width: 0;
+background-color: gray;
+position: absolute;
+transition: 0.8s ease;
+transition-delay: 0.8s;
+}
+.picture:hover .rightunderlay
+{
+    width: 49%;
+}
+.rightoverlay
+{
+    top:0;
+    left: 51%;
+    height: 100%;
+    width: 0;
+    background-image: linear-gradient(90deg,gray, white,gray);
+    /* position: absolute; */
+    transition: 0.8s ease;
+    overflow: hidden;
+    /* transition-delay: 0.8s; */
+}
+.picture:hover .rightoverlay
+{
+    width: 100%;
+}
+
+
+/* ******************************** */
+h1{
+    opacity: 0;
+    position: absolute;
+    transition-delay: 0.8s;
+    color: azure;
+}
+.picture:hover h1
+{
+    opacity: 1;
+}
+p
+{
+    opacity: 0;
+    position: absolute;
+    transition-delay: 0.8s;
+    color: azure;
+}
+.picture:hover p
+{
+    opacity: 1;
+}

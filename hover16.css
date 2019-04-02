@@ -1,0 +1,35 @@
+body
+{
+    /* background: red */
+}
+.picture
+{
+    top:100px;
+    left:100px;
+    width: 360px;
+    height: 240px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+.picture img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.leftlay
+{
+    top: 0%;
+    left: 0%;
+    /* width: 100%; */
+    height:100%;
+    width: 0%;
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    transition: 0.8s ease;
+}
+.picture:hover .leftlay
+{
+    width: 50%;
+}

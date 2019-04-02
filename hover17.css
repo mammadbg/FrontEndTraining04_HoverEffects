@@ -1,0 +1,84 @@
+body
+{
+    /* background: red */
+}
+.picture
+{
+    top:100px;
+    left:100px;
+    width: 360px;
+    height: 240px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+.picture img
+{
+    width: 100%;
+    height: 100%;
+}
+.hoverlay
+{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height:100%;
+    background-image: url(../08\ hover\ effects/e.jpg);
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    transform: rotateY(0deg);
+    transition: 0.8s;
+    /* opacity: 1; */
+}
+.picture:hover .hoverlay
+{
+    transform: rotateY(180deg);
+}
+
+
+.overlay
+{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height:100%;
+    background-color: #333333 ;
+    position: absolute;
+    transform: rotateY(180deg);
+    transition: 0.8s;
+    opacity: 0;
+}
+.picture:hover .overlay
+{
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+
+
+/* ************************************ */
+.picture h1
+{
+    font-family: Khula;
+    font-size: 17px;    
+    color: white;
+    top:0%;
+    left: 25%;
+    position: absolute;
+    transition: 0.8s ease;
+    direction: reverse;
+}
+.picture p
+{
+    font-family: Khula;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    transition: 1.2s ease;
+}
